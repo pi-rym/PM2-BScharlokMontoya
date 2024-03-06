@@ -28,8 +28,12 @@ cardPremier.classList.add("card-Movie-Premier")
 cardPremier.innerHTML=
 
   //utilizo templateString para concatenar la informacion 
+  //de momento el div sirve pero hay que investigar mejor 
  `<h2>${pelicula.title}</h2>
-  <img src="${pelicula.poster}" alt="${pelicula.title}">
+ 
+  <div class="img-container">
+    <img src="${pelicula.poster}" alt="${pelicula.title}">
+  </div>
   <p><strong>Año:</strong> ${pelicula.year}</p>
   <p>Genero: ${pelicula.genre}</p>
   <p>Director: ${pelicula.director}</p>

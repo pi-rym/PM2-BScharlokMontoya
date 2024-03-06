@@ -3,11 +3,67 @@ body {
     height: 100vh;
     width: 100vw;
     font-family:Arial, Helvetica, sans-serif;
-    background-color:azure ;
-    color: black;
+    background-color:rgb(255, 255, 255) ;
+    color: rgb(255, 94, 0);
 }
-
+/* para una imagen de fondo que aun no encuentro  */
+header{
+    background-image: url(https://i.pinimg.com/564x/aa/64/5b/aa645b9322e2ea122d7a1999def994ea.jpg);
+}
+/* Estilo del logo  */
 h1{
     font-size: 3vw;
+    font-family: "Pacifico", cursiva;
+    font-style: normal;
+}
+/* para estilo y centrado de las opciones de navegacion  */
+nav{
+    border: solid;
+    text-align: center;
+    width: 80vw;
+    margin: auto;
+}
+/* estilo de los etiquetas de navegacion */
+a{
+    margin: 2rem;
+    font-size: 1.5em;
+}
+
+/* boton de buscar falta darle forma  */
+.search-form{
+    display: flex;
+    justify-content: end;
+}
+
+/* estilo del texto de momento esta ok  */
+p {
+    font-size: 0.9vw;
+    font-family: "Protest Revolution", sans-serif;
+    font-style: normal;
+}
+
+
+/* diseño de tarjetas hay que pensar en mejores soluciones para el diseño  */
+#container-premier{
+    border:solid;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin:10px;
+    height: 80vh;
+
+}
+
+.img-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 10px; 
+}
+.card-Movie-Premier {
+    border:solid;
+    display:inline-block ; 
+    margin: 2.5em;
+  
 }
 
