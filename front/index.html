@@ -4,52 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CINEFLIX</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <!-- Enlace de Font Google-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Font h1 -->
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font p -->
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Protest+Revolution&display=swap"
+      rel="stylesheet"
+    />
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
+
   <body>
-    
-    <!-- Posiblemente sea mas facil poner un header de (h1 - nav - form) para poder alinearlos... tenerlo en cuenta -->
-    <Header>
+    <!-- Posiblemente sea mas facil poner un Header de (h1 - nav - form) para poder alinearlos... tenerlo en cuenta -->
+    <header>
       <h1>CINEFLIX</h1>
-          
-      <!-- Opciones barra de Navegacion  -->
+      <!-- Opciones barra de Navegacion -->
       <nav>
         <a href="index.html">Home</a>
         <a href="catalogue.html">Catalogue</a>
         <a href="favorite.html">Favorite</a>
-
-        <!-- boton buscar -->
-        <form class="search-form">
-          <input type="text" placeholder="Buscar películas...">
-          <button type="submit"><i class="fas fa-search"></i></button>
-        </form>
-
-       </nav>
-    </Header>
-    <!-- Contenedor de las tarejtas Principales !!!Estrenos¡¡¡¡  -->
-    <div id="container-premier" >
-      
-      <!-- Agrega más imágenes según sea necesario -->
-    </div>
-  
-
-<!-- Posible contenedor para un Top10 -->
-    <div>
-    </div>
-<!--Psoble contenedor Para Recien Agregadas  -->
-    <div>
-    </div>
-
+      </nav>
+      <!-- boton buscar -->
+      <form class="search-form">
+        <input type="text" placeholder="Buscar películas..." />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </header>
+    <main>
+      <!-- Contenedor de las tarejtas Principales !!!Estrenos¡¡¡¡  -->
+      <section id="container-premier">
+        <!-- Agrega lás imágenes según sea necesario -->
+      </section>
+      <!-- Posible contenedor para un Top10 -->
+      <div></div>
+      <!--Psoble contenedor Para Recien Agregadas  -->
+      <div></div>
+    </main>
     <script src="./scripts/tempData.js"></script>
     <script src="./scripts/index.js"></script>
   </body>

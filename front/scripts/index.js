@@ -1,48 +1,34 @@
 console.log(tempData);
+//! nuevo codigo
 
-// Encontrar el Contenedor de las tarjetas
-
+//?  segundo guardo la informacion  <= primero llamo mi container
 const containerPremier = document.getElementById("container-premier");
 
+//? voy a iterar o recorrer el array
+//recibo el parametro de la funcion y el cuerpo de la funcion con arrow function
+tempData.forEach((pelicula) => {
+  //crear un contenedor adicional pra todas las tarjetas
+  const containerMovies = document.createElement("article");
+  //crear los nuevos contenedores para contener una sola tarjeta
+  const cardPremier = document.createElement("div");
+  //crear la clase de containerMovies
+  containerMovies.classList.add("container-movies");
+  //crear la clase de la tarjeta
+  cardPremier.classList.add("card-premier");
 
-//Mapear el Array 
-
-//Es el array donde voy a llamar el metodo.forEach con el parametro pelicula en la arrow function
-tempData.forEach(pelicula => {
-
-// inicializo la variable donde guardar los elementos creados 
-const cardPremier = document.createElement("div");
-//asigno la clase para poder modificar el CSS
-  //clase para containerPremier
-/* cardPremier.classList.add("container-premier")   */
-  //clase para cardPremier
-cardPremier.classList.add("card-Movie-Premier")
-
-//Defino el contenido del container-premier
-/* containerPremier.innerHTML = 
-  //utilizo templateString para concatenar la informacion
-`<img src="${pelicula.poster}" alt="${pelicula.title}">` */
-
-
-//Defino el contenido de cada cardPremier
-cardPremier.innerHTML=
-
-  //utilizo templateString para concatenar la informacion 
-  //de momento el div sirve pero hay que investigar mejor 
- `<h2>${pelicula.title}</h2>
- 
-  <div class="img-container">
+  //establesco el contenido que va a tener cada contenedor
+  containerMovies.innerHTML = ` 
     <img src="${pelicula.poster}" alt="${pelicula.title}">
-  </div>
-  <p><strong>Año:</strong> ${pelicula.year}</p>
-  <p>Genero: ${pelicula.genre}</p>
-  <p>Director: ${pelicula.director}</p>
-  <p>Duration: ${pelicula.duration}</p>
-  <p>Rate: ${pelicula.rate}</p>
-`
-
-//Agrgar las cardPremier al containerPremier 
-containerPremier.appendChild(cardPremier);
-
-
-})
+    `;
+  cardPremier.innerHTML = `
+    <h3>${pelicula.title}</h3>
+    <p><strong>Año:</strong> ${pelicula.year}</p>
+    <p><strong>Director:</strong> ${pelicula.director}</p>
+    <p><strong>Duracion:</strong> ${pelicula.duration}</p>
+    <p><strong>Genero:</strong> ${pelicula.genre}</p>
+    <p><strong>Calificacion:</strong> ${pelicula.rate}</p>    
+    `;
+  //estables quien es padre de quien
+  containerPremier.appendChild(containerMovies);
+  containerMovies.appendChild(cardPremier);
+});
