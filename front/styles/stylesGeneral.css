@@ -1,0 +1,84 @@
+/*! header */
+/* quiero que vaya una imagen pero aun no la consigo */
+header {
+  background-color: rgb(0, 0, 0);
+}
+/*? titulo */
+.h1General {
+  font-size: 3.5em;
+  color: rgb(255, 115, 0);
+  font-family: cursive;
+  font-weight: bold;
+}
+.h1General a {
+  text-decoration: none; /* con esto le quito la linea lo subraya */
+  color: rgb(255, 115, 0); /*cambia el color por defecto de <a> */
+}
+
+/*? barra de Navegacion*/
+.navegacionGeneral {
+  display: flex; /* lo convierto en contenedor flexible */
+  justify-content: center; /* distribuye los elementos horizontalmente  */
+}
+.divNavegacionGeneral {
+  display: inline-block; /* blokes de linea  */
+  margin: 2vh 3.5vw; /* margen exterior entre el borde y otro elemento */
+  padding: 0.7vh 1vw; /* margen interior entre el borde y el contenido */
+  border-radius: 10px;
+}
+.divNavegacionGeneral a {
+  text-decoration: none; /* con esto le quito la linea lo subraya */
+  color: rgb(251, 251, 251); /*cambia el color por defecto de <a> */
+  font-size: 1.5em; /* cambio su tamño de letra */
+  font-family: cursive;
+}
+.navegacionGeneral :hover {
+  /* cambia el color de la letra cuando el mouse pasa sobre ella  */
+  color: black;
+  /* cambia el color del fondo cuando el mouse pasa sobre ella  */
+  background-color: rgb(255, 153, 70);
+}
+
+/* ? boton de busqueda  */
+.containerFormGeneral {
+  display: flex;
+  justify-content: flex-end;
+}
+.containerFormGeneral button {
+  border-radius: 10px;
+  padding: 1.7vh 1vw;
+}
+
+/* ! footer */
+.footerGeneral {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.668);
+  color: aqua;
+}
+.navFooterGeneral {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.sectionFooterGeneral1 {
+  display: inline-block;
+  margin-left: auto;
+}
+.sectionFooterGeneral1 p {
+  display: flex;
+  justify-content: center;
+}
+.sectionFooterGeneral2 {
+  display: block;
+  margin-left: auto;
+}
+.sectionFooterGeneral2 img {
+  width: 25px;
+  height: 25px;
+}
+.sectionFooterGeneral3 {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}

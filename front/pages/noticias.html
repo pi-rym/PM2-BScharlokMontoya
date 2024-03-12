@@ -3,24 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <title>CINEFLIX</title>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/stylesGeneral.css" />
+
+    <!-- boostrad  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1>CATALOGUE</h1>
-    <!-- Opciones barra de Navegacion  -->
-    <nav>
-      <a href="../index.html">Home</a>
-      <a href="./noticias.html">Catalogue</a>
-      <a href="./proximamente.html">Favorite</a>
-
+    <header>
+      <h1 class="h1General"><a href="../index.html">CINEFLIX</a></h1>
+      <!-- Opciones barra de Navegacion -->
+      <nav class="navegacionGeneral">
+        <div class="divNavegacionGeneral">
+          <a href="../index.html">Home</a>
+        </div>
+        <div class="divNavegacionGeneral">
+          <a href="proximamente.html">Proximamente</a>
+        </div>
+        <div class="divNavegacionGeneral">
+          <a href="noticias.html">Noticias</a>
+        </div>
+        <div class="divNavegacionGeneral">
+          <a href="../pages/formularioDeContacto.html"
+            >Formulario de Contacto</a
+          >
+        </div>
+      </nav>
       <!-- boton buscar -->
-      <form class="search-form">
-        <input type="text" placeholder="Buscar películas..." />
-        <button type="submit"><i class="fas fa-search"></i></button>
+      <form class="containerFormGeneral">
+        <label class="searchFormGeneral">
+          <input type="text" placeholder="Buscar películas..." />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </label>
       </form>
-    </nav>
+    </header>
+    <hr />
+    <main></main>
+    <hr />
+    <footer class="footerGeneral">
+      <nav class="navFooterGeneral">
+        <section class="sectionFooterGeneral1">
+          <p><b>© 2024 Brahyam Scharlok</b></p>
+          <p id="textPractice">
+            <b>Este sitio solo tienes fines de practica academica</b>
+          </p>
+        </section>
+        <!-- redes Sociales-->
+        <!-- tener presente que el tamaño hay que pasarlo al css -->
+        <section class="sectionFooterGeneral2">
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="../assets/facebook.jpg" atl="Logo de facebook" />
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="../assets/instagram.jpg" alt="Logo de instagram" />
+          </a>
+          <a href="https://www.whatsapp.com" target="_blank">
+            <img src="../assets/whatsapp.jpg" alt="Logo de whatsapp" />
+          </a>
+        </section>
+        <!--Condiciones legales-->
+        <section class="sectionFooterGeneral3">
+          <a href="../pages2/politicaDeCookies.html" target="_blank"
+            ><strong>Politica De Cookies</strong></a
+          >
+          <a href="../pages2/terminosLegales.html" target="_blank"
+            ><strong>Terminos Legales</strong></a
+          >
+          <a href="../pages2/politicasDePrivacidad.html" target="_blank"
+            ><strong>Politicas de Privacidad</strong></a
+          >
+        </section>
+      </nav>
+    </footer>
     <script src="./scripts/tempData.js"></script>
     <script src="./scripts/index.js"></script>
   </body>
