@@ -59,7 +59,63 @@
       </form>
     </header>
     <hr />
-    <main></main>
+    <main>
+      <form style="width: 70vw; margin: auto;">
+      <h2 style="text-align: center">Formulario de Contacto</h2>
+      <!-- Nombre -->
+      <div class="row mx-auto p-2">
+        <div class="col">
+          First Name<input
+            type="text"
+            class="form-control"
+            placeholder="First name"
+            aria-label="First name"
+          />
+        </div>
+        <!-- Apellido -->
+        <div class="col">
+          Last Name<input
+            type="text"
+            class="form-control"
+            placeholder="Last name"
+            aria-label="Last name"
+          />
+        </div>
+      </div>
+      <!-- Email -->
+      <div class="mb-3 mx-auto p-3">
+        <label for="controlInput1" class="form-label"
+          >Email address</label
+        >
+        <input
+          type="email"
+          class="form-control"
+          id="controlInput1"
+          placeholder="name@example.com"
+        />
+      </div>
+      <!-- Textarea -->
+      <div class="mb-3 mx-auto p-3">
+        <label for="Textarea1" class="form-label"
+          >Description</label
+        >
+        <textarea
+          class="form-control"
+          id="Textarea1"
+          rows="3"
+          cols="30"
+          placeholder="Your description..."
+        ></textarea>
+      </div>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" value="Accepted" required name="terms-and-conditions" /> I accept the <a href="../pages2/terminosLegales.html" target="_blank">terms and conditions</a>
+      </label>
+      <!-- Boton -->
+      <label class="d-grid gap-2 col-6 mx-auto">
+        <input class="btn btn-primary" type="submit"></input>
+      </label>
+    </main>
+  </form>
     <hr />
     <footer class="footerGeneral">
       <nav class="navFooterGeneral">
@@ -96,7 +152,5 @@
         </section>
       </nav>
     </footer>
-    <script src="./scripts/tempData.js"></script>
-    <script src="./scripts/index.js"></script>
   </body>
 </html>
