@@ -1,7 +1,11 @@
 /*! header */
+main {
+  width: 99.2vw;
+  margin: auto;
+}
 /* quiero que vaya una imagen pero aun no la consigo */
 header {
-  background-color: rgb(0, 0, 0);
+  background-image: url(../assets/imgEncabezado.png);
 }
 /*? titulo */
 .h1General {
