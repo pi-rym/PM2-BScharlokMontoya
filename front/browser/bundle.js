@@ -15,7 +15,7 @@
   \*****************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const axios = __webpack_require__(/*! axios */ \"./node_modules/axios/dist/browser/axios.cjs\");\r\n\r\nconst renderFilms = __webpack_require__(/*! ./renderFilms */ \"./scripts/renderFilms.js\");\r\n\r\nconst getFilms = () => {\r\n  axios(\"https://students-api.up.railway.app/movies\").then(\r\n    ({ data }) => data.forEach(renderFilms)\r\n    // .catch((error) => console.log(error.message));\r\n  );\r\n};\r\n\r\nmodule.exports = getFilms;\r\n\n\n//# sourceURL=webpack://front/./scripts/heandler.js?");
+eval("const axios = __webpack_require__(/*! axios */ \"./node_modules/axios/dist/browser/axios.cjs\");\r\n\r\nconst renderFilms = __webpack_require__(/*! ./renderFilms */ \"./scripts/renderFilms.js\");\r\n\r\nconst getFilms = () => {\r\n  axios(\"http://localhost:3000/movies\").then(\r\n    ({ data }) => data.forEach(renderFilms)\r\n    // .catch((error) => console.log(error.message)); para\r\n  );\r\n};\r\n\r\nmodule.exports = getFilms;\r\n\n\n//# sourceURL=webpack://front/./scripts/heandler.js?");
 
 /***/ }),
 
