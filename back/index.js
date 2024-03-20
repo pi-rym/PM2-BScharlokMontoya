@@ -1,9 +1,15 @@
-const app = require('./src/server')
+require("dotenv").config();
+const app = require("./src/server");
+const conDb = require("./src/config/conDb");
 
-const PORT = 3000;
+const { PORT } = process.env;
 
-app.listen(PORT, () => console.log(`server is listening on port ${PORT}`))
- 
-
-
-
+conDb()
+  .then((res) => {
+    app.listen(PORT, () => {
+      console.log(`server is listening on port ${PORT}`);
+    });
+  })
+  .catch((err) => {
+    console.log("Error al conectar la BDD");
+  });
