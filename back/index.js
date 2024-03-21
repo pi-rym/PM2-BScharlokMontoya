@@ -1,7 +1,6 @@
 require("dotenv").config();
 const app = require("./src/server");
 const conDb = require("./src/config/conDb");
-
 const { PORT } = process.env;
 
 conDb()
@@ -11,5 +10,5 @@ conDb()
     });
   })
   .catch((err) => {
-    console.log("Error al conectar la BDD");
+    console.log("Error al conectar la BDD", err.message);
   });
