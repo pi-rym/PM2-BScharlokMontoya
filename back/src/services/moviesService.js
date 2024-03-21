@@ -16,4 +16,12 @@ module.exports = {
       throw new Error(error);
     }
   },
+  postMovie: async (movie) => {
+    try {
+      const movieCreated = await Movie.create(movie);
+      return movieCreated;
+    } catch (error) {
+      throw Error(error.message);
+    }
+  },
 };
