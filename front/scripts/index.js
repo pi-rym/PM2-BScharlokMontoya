@@ -1,3 +1,1 @@
-const getFilms = require("./heandler");
-
-getFilms();
+console.log(tempData);
