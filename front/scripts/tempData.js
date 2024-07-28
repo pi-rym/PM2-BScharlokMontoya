@@ -1,4 +1,6 @@
+//Array de tempData
 const tempData = [
+  // Primer objeto
   {
     title: "Guardians of the Galaxy Vol. 2",
     year: 2017,
@@ -9,6 +11,7 @@ const tempData = [
     poster:
       "https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg",
   },
+  //Segundo Objeto
   {
     title: "Star Wars: Episode IV - A New Hope",
     year: 1977,
@@ -19,6 +22,7 @@ const tempData = [
     poster:
       "https://m.media-amazon.com/images/M/MV5BOTA5NjhiOTAtZWM0ZC00MWNhLThiMzEtZDFkOTk2OTU1ZDJkXkEyXkFqcGdeQXVyMTA4NDI1NTQx._V1_SX300.jpg",
   },
+  //Tercer Objeto
   {
     title: "The Lord of the Rings: The Fellowship of the Ring",
     year: 2001,
@@ -29,6 +33,6 @@ const tempData = [
     poster:
       "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
   },
-];
 
-module.exports = { tempData };
+  // Puedo ingresar mas Obejtos si es necesario tanto no salga del corchete del array tempData
+];

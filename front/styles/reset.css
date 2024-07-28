@@ -1,8 +1,6 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* reset.css */
 
+/* Establecer márgenes y rellenos en 0 */
 html,
 body,
 div,
@@ -92,7 +90,13 @@ video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
+/* Establecer bordes en 0 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Corrección de errores para algunos elementos */
 article,
 aside,
 details,
@@ -107,6 +111,12 @@ section {
   display: block;
 }
 
+/* Corrección de errores para elementos 'hidden' */
+*[hidden] {
+  display: none;
+}
+
+/* Establecer estilos de texto predeterminados */
 body {
   line-height: 1;
 }
@@ -129,6 +139,7 @@ q:after {
   content: none;
 }
 
+/* Limpiar elementos 'table' */
 table {
   border-collapse: collapse;
   border-spacing: 0;
